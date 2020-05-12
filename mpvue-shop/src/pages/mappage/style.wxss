@@ -1,0 +1,36 @@
+.mappage {
+  height: 100%;
+  background: #fff;
+  position: relative;
+}
+.mappage .section {
+  height: 30px;
+  width: 100%;
+}
+.mappage .section input {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #c3c3c3;
+  height: 30px;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+.mappage .result {
+  width: 40%;
+  padding: 20rpx 0 20rpx 30rpx;
+}
+.mappage .map_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.mappage .map_container .title {
+  font-size: 34rpx;
+  font-weight: bold;
+  padding: 20rpx;
+}
+.mappage .map_container .map {
+  width: 100%;
+  height: 500rpx;
+}

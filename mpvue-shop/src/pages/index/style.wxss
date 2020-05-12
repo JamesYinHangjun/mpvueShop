@@ -1,0 +1,333 @@
+.index {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.index .search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 25rpx 0 10rpx;
+  height: 80rpx;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.index .search div:nth-child(1) {
+  width: 115rpx;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 20rpx;
+  padding-right: 15rpx;
+}
+.index .search div:nth-child(2) {
+  flex: 1;
+  position: relative;
+}
+.index .search div:nth-child(2) input {
+  width: 100%;
+  height: 56rpx;
+  border-radius: 8rpx;
+  background: #ededed;
+  box-sizing: border-box;
+  padding-left: 40rpx;
+}
+.index .search div:nth-child(2) .icon {
+  position: absolute;
+  top: 15rpx;
+  left: 10rpx;
+  background: url('http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/search2-2fb94833aa.png') center no-repeat;
+  background-size: 100%;
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+.index .swiper {
+  width: 100%;
+  height: 417rpx;
+  margin-top: 80rpx;
+}
+.index .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.index .swiper-container .swiper-item {
+  width: 100%;
+  height: 100%;
+}
+.index .swiper-container .swiper-item .slide-image {
+  width: 100%;
+}
+.index .channel {
+  display: flex;
+  padding: 20rpx 0;
+  background-color: #fff;
+}
+.index .channel div {
+  flex: 1;
+  text-align: center;
+}
+.index .channel div img {
+  height: 58rpx;
+  width: 58rpx;
+  display: inline-block;
+}
+.index .brand {
+  width: 100%;
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.index .brand .head {
+  text-align: center;
+  padding: 40rpx 0;
+}
+.index .brand .content {
+  width: 730rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.index .brand .content div {
+  width: 360rpx;
+  height: 235rpx;
+  margin-bottom: 10rpx;
+  position: relative;
+}
+.index .brand .content div div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10rpx;
+}
+.index .brand .content div div p:nth-child(2) {
+  font-size: 24rpx;
+}
+.index .brand .content div img {
+  width: 100%;
+  height: 100%;
+}
+.index .newgoods {
+  width: 100%;
+}
+.index .newgoods-top {
+  width: 100%;
+  height: 260rpx;
+  margin-top: 20rpx;
+  background-image: url("../../../static/images/bgnew.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index .newgoods-top .top p {
+  color: #8c9bae;
+  font-size: 32rpx;
+}
+.index .newgoods-top .top p:nth-child(2) {
+  width: 180rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 27rpx auto 0 auto;
+  font-size: 22rpx;
+  background: #d8e4f0;
+}
+.index .newgoods .list {
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding-bottom: 10rpx;
+}
+.index .newgoods .list ul .scroll-view {
+  width: 100%;
+  white-space: nowrap;
+}
+.index .newgoods .list ul .scroll-view li {
+  width: 280rpx;
+  height: 416rpx;
+  margin: 5rpx 0 5rpx 25rpx;
+  display: inline-block;
+}
+.index .newgoods .list ul .scroll-view li img {
+  width: 280rpx;
+  height: 280rpx;
+}
+.index .newgoods .list ul .scroll-view li p {
+  width: 94%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 8rpx;
+  text-indent: 1em;
+}
+.index .newgoods .list ul .scroll-view li p:nth-child(2) {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.index .newgoods .list ul .scroll-view li p:nth-child(3) {
+  font-size: 24rpx;
+  color: #8a8a8a;
+}
+.index .newgoods .list ul .scroll-view li p:nth-child(4) {
+  font-size: 24rpx;
+  color: #9c3232;
+}
+.index .hotgoods .newgoods-top {
+  background: url("../../../static/images/bgtopic.png") no-repeat;
+  background-size: 100% 100%;
+}
+.index .hotgoods .newgoods-top .top p {
+  color: #b1a279;
+  font-size: 32rpx;
+  vertical-align: middle;
+}
+.index .hotgoods .newgoods-top .top p:nth-child(1) span {
+  width: 4rpx;
+  height: 4rpx;
+  font-size: 14rpx;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #b1a279;
+}
+.index .hotgoods .newgoods-top .top p:nth-child(2) {
+  background: #f4e9cb;
+  font-size: 22rpx;
+}
+.index .topicList {
+  margin-top: 20rpx;
+  background-color: #ffffff;
+}
+.index .topicList-top {
+  text-align: center;
+  padding: 36rpx;
+  vertical-align: middle;
+}
+.index .topicList-top .icon {
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 5px;
+  background: url("../../../static/images/right.png") no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+.index .topicList .list .scroll-view {
+  white-space: nowrap;
+}
+.index .topicList .list .scroll-view li {
+  display: inline-block;
+  width: 575rpx;
+  margin-left: 25rpx;
+}
+.index .topicList .list .scroll-view li img {
+  display: block;
+  width: 575rpx;
+  height: 325rpx;
+  border-radius: 10rpx;
+}
+.index .topicList .list .scroll-view li .btom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42rpx;
+  width: 100%;
+}
+.index .topicList .list .scroll-view li .btom div:nth-child(1) {
+  width: 90%;
+}
+.index .topicList .list .scroll-view li .btom div:nth-child(1) p {
+  margin-top: 8rpx;
+}
+.index .topicList .list .scroll-view li .btom div:nth-child(1) p:nth-child(1) {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.index .topicList .list .scroll-view li .btom div:nth-child(1) p:nth-child(2) {
+  width: 90%;
+  font-size: 24rpx;
+  color: #8a8a8a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.index .topicList .list .scroll-view li .btom div:nth-child(2) {
+  margin-top: 8rpx;
+  color: #9c3232;
+  font-size: 24rpx;
+}
+.index .topicList .list .scroll-view li:last-child {
+  margin-right: 25rpx;
+}
+.index .newcategory {
+  margin-top: 20rpx;
+  padding: 0 10rpx 25rpx 10rpx;
+}
+.index .newcategory .head {
+  padding: 25rpx 0;
+  text-align: center;
+}
+.index .newcategory .sublist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 730rpx;
+  margin: 0 auto;
+}
+.index .newcategory .sublist div {
+  width: 360rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+  padding-bottom: 10rpx;
+}
+.index .newcategory .sublist div img {
+  display: block;
+  width: 302rpx;
+  height: 302rpx;
+  margin: 0 auto;
+}
+.index .newcategory .sublist div p {
+  margin-bottom: 5rpx;
+  text-indent: 1em;
+}
+.index .newcategory .sublist div p:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 98%;
+}
+.index .newcategory .sublist div p:nth-child(3) {
+  color: #9c3232;
+}
+.index .newcategory .sublist .last {
+  display: block;
+  width: 302rpx;
+  height: 302rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.index .newcategory .sublist .last p {
+  height: 33rpx;
+  width: 100%;
+  line-height: 33rpx;
+  color: #333;
+  font-size: 33rpx;
+  text-align: center;
+}
+.index .newcategory .sublist .last .icon {
+  display: inline-block;
+  width: 70rpx;
+  height: 70rpx;
+  background: url('../../../static/images/rightbig.png') no-repeat;
+  background-size: 100% 100%;
+  margin-top: 60rpx;
+}
+.index .newcategory .sublist div:nth-child(2n) {
+  margin-left: 10rpx;
+}
