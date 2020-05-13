@@ -13,7 +13,7 @@
       </div>
     </scroll-view>
 
-    <!-- 显示自己的实时位置 -->
+    <!-- 地图：显示自己的实时位置 -->
     <div class="map_container">
       <div class="title">显示当前位置:</div>
       <map class="map" id="map" scale="16" :longitude="longitude" :latitude="latitude" :markers="markers"></map>
@@ -39,7 +39,7 @@ export default {
     this.getMapAddress();
   },
   methods: {
-    ...mapMutations(['update']),    //从mapMutations中结构出update
+    ...mapMutations(['update']),    //从mapMutations中解构出update
     // 获取地理位置信息
     getMapAddress() {
       let _this = this
@@ -71,13 +71,16 @@ export default {
         }
       })
     },
+    // 在搜索框中输入时
     bindInput(e) {
       console.log(e)
       // 高德地图中的 获取输入提示字 输入补全
       let _this = this
+      // 这个keywords是上面输入框双向绑定的值，是输入框中输入的值
       let keywords = _this.keywords
       var myAmapFun = new amapFile.AMapWX({key: 'ea59573dc6b616f07af8669aa560d68d'})
       myAmapFun.getInputtips({
+        // 高德地图下的 获取输入提示词那一项
         keywords: keywords,
         location: '',
         success: function(data){
@@ -85,7 +88,6 @@ export default {
           if(data && data.tips){
             _this.tips = data.tips
           }
-
         }
       })
     },

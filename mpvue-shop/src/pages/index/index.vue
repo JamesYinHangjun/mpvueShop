@@ -183,15 +183,19 @@ export default {
           // 接口调用成功，再判断是否授权
           console.log(result)
 
-          // 如果没有授权，打开设置 wx.openSetting
+          // 如果没有授权，打开设置 (wx.openSetting)
           if(!result.authSetting['scope.userLocation']) {
             wx.openSetting({
               success: (result) => {
                 //打开设置成功后 获取授权位置信息
                 console.log(result)
+
+                // 使用高德地图获取位置信息
                 _this.getCityName()
               },
-              fail: () => {},
+              fail: (err) => {
+                console.log(err)
+              },
               complete: () => {}
             });
           } else {
@@ -228,7 +232,7 @@ export default {
         fail: function(info) {
           // 失败回调 获取地理位置失败，返回一个默认的城市
           // _this.cityName = '杭州'
-          this.update({cityName: '杭州'})
+          _this.update({cityName: '杭州'})
         }
       })
     },

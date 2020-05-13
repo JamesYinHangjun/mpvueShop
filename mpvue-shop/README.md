@@ -35,3 +35,13 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+
+```
+基于mpvue+koa实现的网易严选小程序 less
+主要页面:首页、专题、分类、购物车、我的
+
+授权wx.getSeting
+使用高德地图(amap-wx)实时定位、搜索补全 轮播图
+```
