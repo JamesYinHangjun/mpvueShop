@@ -20,10 +20,11 @@ export function formatTime (date) {
 
 
 // ==> 接口请求的封装
-
+// 所有接口前缀应该都是host,不同的只是后面的内容(这里的5757不影响，写成8080也可以)
 const host = "http://localhost:5757/lm"
 export {host}
 
+// 请求封装(url只是接口的后半段)
 function request(url,method,data,header = {}) {
   // 请求数据时，会有一个请求loading
   wx.showLoading({

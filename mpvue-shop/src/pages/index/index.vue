@@ -167,6 +167,7 @@ export default {
   },
   mounted () {
     this.getCityName()
+    // 请求数据
     this.getData()
   },
   methods: {

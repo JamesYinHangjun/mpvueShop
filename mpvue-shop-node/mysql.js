@@ -2,6 +2,7 @@
 const configs = require("./config")
 
 // 线程池的链接
+// knex 见 npmjs.com/package/knex
 var knex = require("knex") ({
     client: 'mysql',
     connection: {
