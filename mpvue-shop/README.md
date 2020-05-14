@@ -78,5 +78,5 @@ controller 控制层(控制不同的功能需要用到的代码)
 
 顺序:
     app.js => routes/index.js => controllers
-    config.js => mysql.js => app.js(引入端口) => config.js
+    config.js => mysql.js(这时就可以使用knex操作mysql了) => app.js(引入端口) => config.js
 ```

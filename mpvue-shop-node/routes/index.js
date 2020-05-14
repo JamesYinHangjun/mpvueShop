@@ -1,8 +1,10 @@
 const router = require('koa-router')({
+    // prefix 加路由前缀
     prefix: '/lm'
 })
 // const router = new Router()
 
+// 引入控制器
 const controllers = require("../controllers/index")
 
  // 从数据库中获取数据返回给前端

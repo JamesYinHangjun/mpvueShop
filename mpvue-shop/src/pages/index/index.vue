@@ -23,7 +23,7 @@
 
     <!-- channel -->
     <div class="channel">
-        <div v-for="(item, index) in channel" :key="index" @click="categotyList(item.id)">
+        <div v-for="(item, index) in channel" :key="index" @click="categoryList(item.id)">
           <img :src="item.icon_url" alt="">
           <p>{{item.name}}</p>
         </div>
@@ -34,6 +34,7 @@
       <div class="head" @click="tobrandList">
         品牌制造商直供
       </div>
+
       <div class="content">
         <div v-for="(item,index) in brandList" :key="index" @click="brandDetail(item.id)">
           <div>
@@ -240,7 +241,7 @@ export default {
     // 点击channel跳转
     categoryList(id) {
       wx.navigateTo({
-        url: "/pages/categoryList/main?id=" + id
+        url: "/pages/categorylist/main?id=" + id
       })
     },
     // 点击商品，进入商品详情页

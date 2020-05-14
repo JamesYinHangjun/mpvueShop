@@ -1,4 +1,4 @@
-// 自动读取路径
+// 自动读取本地文件路径
 const _ = require("lodash")
 const fs = require("fs")
 const path = require("path")
