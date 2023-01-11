@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "knex": "^0.20.13",
+    "knex": "^2.4.0",
     "koa": "^2.11.0",
     "koa-router": "^8.0.8",
     "loadsh": "0.0.4",
